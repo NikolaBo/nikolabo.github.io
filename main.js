@@ -64,10 +64,6 @@ var subject = [
 					
 					"Cortana ",
 					
-					"Regret ",
-					
-					"Plaza ",
-					
 					"Greenskull ",
 					
 					"my mom ",
