@@ -82,9 +82,16 @@ var subject = [
 					
 					"this dedicated server ",
 					
+					"my knee ",
+					
+					"Bill Gates ",
+					
+					"my hdmi cord ",
+					
 					"that warthog ",
 					
 					"this grunt "
+	
 ];
 var action = [ 
  					"is lagging.", 
