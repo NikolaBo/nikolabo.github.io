@@ -78,6 +78,8 @@ var subject = [
 					
 					"The Arbiter ",
 					
+					"Mr. Fruit ",
+					
 					"my TV ",
 					
 					"this dedicated server ",
@@ -85,6 +87,8 @@ var subject = [
 					"my knee ",
 					
 					"Bill Gates ",
+					
+					"Rhabby_V ",
 					
 					"my hdmi cord ",
 					
