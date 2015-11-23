@@ -20,8 +20,3 @@ img{
 	height: auto;
 	min-width: 50%;
 }
-footer {
-    width: 100%;
-    bottom: 0;
-    position: fixed;
-}
