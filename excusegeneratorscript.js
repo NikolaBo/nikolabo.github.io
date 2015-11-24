@@ -132,6 +132,10 @@ var action = [
 					
 					"keeps yelling at me.",
 					
-					"is looking at me funny."
+					"keeps screen peeking.",
+					
+					"is looking at me funny.",
+					
+					"is spooky."
 ];
 
