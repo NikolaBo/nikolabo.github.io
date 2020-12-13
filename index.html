@@ -13,6 +13,29 @@
 	<!--Icons -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
 	<style>
+		a {
+			color: black;
+			text-decoration: inherit;
+			font-weight: bold;
+		}
+		a:hover {
+			color: black;
+			text-decoration: inherit;
+			font-weight: bold;
+		}
+		.copy {
+			font-size: 16px;
+		}
+		.award {
+			background: orange;
+		}
+		.awardp {
+			font-size: 14px;
+		}
+		.btn.btn-social-text{
+			padding: 0;
+			text-align: center;
+		}
 		.btn.btn-social-icon {
 		     width: 50px;
 		     height: 50px;
@@ -33,7 +56,25 @@
 		 }
 		 .btn-github:hover,
 		 .btn-github:focus {
-		     background: black;
+		     background: #191c1f;
+		     color: #ffffff
+		 }
+		 .btn-devpost {
+		     background: #003e54;
+		     color: #ffffff
+		 }
+		 .btn-devpost:hover,
+		 .btn-devpost:focus {
+		     background: #003142;
+		     color: #ffffff
+		 }
+		 .btn-generic {
+		     background: #00ccff;
+		     color: #ffffff
+		 }
+		 .btn-generic:hover,
+		 .btn-generic:focus {
+		     background: #00c0f0;
 		     color: #ffffff
 		 }
 	</style>
@@ -45,12 +86,33 @@
 	    <div class="col-md-4">
 	    	<img src="https://avatars0.githubusercontent.com/u/10509794?s=460&u=0f7f595f22ab42bf869230bb9bbc7c35818ec56d&v=4" class=" img-responsive img-circle" alt="Head shot" style="width: 100%">
 	    	<p class="h1" style="font-size: 52px;">Nikola Bojanic</p>
+	    	<button type="button" class="btn btn-social-icon btn-generic" onclick="document.location='mailto:n.s.bojanic@gmail.com'"><span style="font-size: 20px"><i class="fa fa-envelope"></i></span></button>
 	    	<button type="button" class="btn btn-social-icon btn-linkedin" onclick="document.location='https://linkedin.com/in/nikola-bojanic/'"><span style="font-size: 20px"><i class="fa fa-linkedin"></i></span></button>
 	    	<button type="button" class="btn btn-social-icon btn-github" onclick="document.location='https://github.com/NikolaBo'"><span style="font-size: 20px"><i class="fa fa-github"></i></span></button>
 	    </div>
 	    <div class="col-md-8">
 	    	<h1>My Projects</h1>
-	    	<p class="lead">Test</p>
+	    	<div class="row">
+	    		<div class="col-md-6">
+	    			<p class="lead" style="margin-bottom: 0;">FaceMe</p>
+	    			<img src="faceme.png" class="img-responsive" alt="PollenParty logo">
+	    			<p class="copy">In this project I used Python with OpenCV and the Google Cloud Vision AI to add visual indicators and audio cues to video chat, to help users stay in frame. This project was submitted to <a href="https://dubhacks.co/">DubHacks 2020</a>.</p>
+	    			<p class="awardp"><span class="label label-default copy award">Winner</span> Best First Time Hack</p>
+	    			<p class="awardp"><span class="label label-default copy award">Winner</span> Google Cloud COVID-19 Hackathon Fund</p>
+	    			<p class="awardp"><span class="label label-default copy award">Winner</span> Best Use of Google Cloud</p>
+	    			<button type="button" class="btn btn-devpost copy" onclick="document.location='https://devpost.com/software/facecentric'">Learn More <span style="font-size: 20px"></span></button>
+	    			<button type="button" class="btn btn-github copy" onclick="document.location='https://github.com/sarda-devesh/FaceMe'">View Code <span style="font-size: 20px"><i class="fa fa-github"></i></span></button>
+	    		</div>
+	    		<div class="col-md-6">
+	    			<p class="lead">PollenParty</p>
+	    			<img src="pollen.png" class="img-responsive" alt="PollenParty logo">
+	    			<br/><br/> 
+	    			<p class="copy">For this project I wrote a Java web app that finds native pollinator friendly plants based on the user's ZIP code, and a Unity WebGL simulation in C# for planning a pollinator garden. This was my <a href="https://courses.cs.washington.edu/courses/cse143/20au/">CSE 143</a> final project. <span class="small">Opening this for the first time may take several seconds as it is hosted on free Heroku.</span></p>
+	    			<button type="button" class="btn btn-generic copy" onclick="document.location='https://pollenparty.herokuapp.com/'">Try It <span style="font-size: 20px"></span></button>
+	    			<button type="button" class="btn btn-devpost copy" onclick="document.location='https://devpost.com/software/pollenparty'">Learn More <span style="font-size: 20px"></span></button>
+	    			<button type="button" class="btn btn-github copy" onclick="document.location='https://github.com/NikolaBo/pollenparty'">View Code <span style="font-size: 20px"><i class="fa fa-github"></i></span></button>
+	    		</div>
+	    	</div>
 	    </div>
 	  </div>
 	</div>
