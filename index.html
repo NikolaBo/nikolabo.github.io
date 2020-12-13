@@ -13,11 +13,7 @@
 	<!--Icons -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
 	<style>
-		a {
-			color: black;
-			text-decoration: inherit;
-			font-weight: bold;
-		}
+		a,
 		a:hover {
 			color: black;
 			text-decoration: inherit;
@@ -28,6 +24,9 @@
 		}
 		.award {
 			background: orange;
+		}
+		.tech {
+			background: turquoise;
 		}
 		.awardp {
 			font-size: 14px;
@@ -82,10 +81,11 @@
 </head>
 <body>
 	<div class="container">
-	  <div class="row" style="margin-top: 20px">
+	  <div class="row" style="margin-top: 60px">
 	    <div class="col-md-4">
 	    	<img src="https://avatars0.githubusercontent.com/u/10509794?s=460&u=0f7f595f22ab42bf869230bb9bbc7c35818ec56d&v=4" class=" img-responsive img-circle" alt="Head shot" style="width: 100%">
 	    	<p class="h1" style="font-size: 52px;">Nikola Bojanic</p>
+	    	<p class="copy">Hey. I'm currently a student at the University of Washington studying Computer Science and an Undergraduate Researcher at the <a href="https://uwseal.org/">Sensors, Energy, and Automation Laboratory</a>. I like learning new technologies, penny boarding, and Skittles. You can find more of my experience on LinkedIn or check out some of my projects.</p>
 	    	<button type="button" class="btn btn-social-icon btn-generic" onclick="document.location='mailto:n.s.bojanic@gmail.com'"><span style="font-size: 20px"><i class="fa fa-envelope"></i></span></button>
 	    	<button type="button" class="btn btn-social-icon btn-linkedin" onclick="document.location='https://linkedin.com/in/nikola-bojanic/'"><span style="font-size: 20px"><i class="fa fa-linkedin"></i></span></button>
 	    	<button type="button" class="btn btn-social-icon btn-github" onclick="document.location='https://github.com/NikolaBo'"><span style="font-size: 20px"><i class="fa fa-github"></i></span></button>
@@ -95,7 +95,10 @@
 	    	<div class="row">
 	    		<div class="col-md-6">
 	    			<p class="lead" style="margin-bottom: 0;">FaceMe</p>
-	    			<img src="faceme.png" class="img-responsive" alt="PollenParty logo">
+	    			<img src="faceme.png" class="img-responsive" alt="FaceMe logo">
+	    			<p><span class="label label-default copy tech">Python</span>
+	    			<span class="label label-default copy tech">OpenCV</span>
+	    			<span class="label label-default copy tech">Google Cloud</span></p>
 	    			<p class="copy">In this project I used Python with OpenCV and the Google Cloud Vision AI to add visual indicators and audio cues to video chat, to help users stay in frame. This project was submitted to <a href="https://dubhacks.co/">DubHacks 2020</a>.</p>
 	    			<p class="awardp"><span class="label label-default copy award">Winner</span> Best First Time Hack</p>
 	    			<p class="awardp"><span class="label label-default copy award">Winner</span> Google Cloud COVID-19 Hackathon Fund</p>
@@ -107,6 +110,9 @@
 	    			<p class="lead">PollenParty</p>
 	    			<img src="pollen.png" class="img-responsive" alt="PollenParty logo">
 	    			<br/><br/> 
+	    			<p><span class="label label-default copy tech">Java</span>
+	    			<span class="label label-default copy tech">C#</span>
+	    			<span class="label label-default copy tech">Unity</span></p>
 	    			<p class="copy">For this project I wrote a Java web app that finds native pollinator friendly plants based on the user's ZIP code, and a Unity WebGL simulation in C# for planning a pollinator garden. This was my <a href="https://courses.cs.washington.edu/courses/cse143/20au/">CSE 143</a> final project. <span class="small">Opening this for the first time may take several seconds as it is hosted on free Heroku.</span></p>
 	    			<button type="button" class="btn btn-generic copy" onclick="document.location='https://pollenparty.herokuapp.com/'">Try It <span style="font-size: 20px"></span></button>
 	    			<button type="button" class="btn btn-devpost copy" onclick="document.location='https://devpost.com/software/pollenparty'">Learn More <span style="font-size: 20px"></span></button>
@@ -116,8 +122,6 @@
 	    </div>
 	  </div>
 	</div>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-	<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js'></script>
 </body>
 
 </html>

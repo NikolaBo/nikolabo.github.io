@@ -1,3 +1,3 @@
-# nikolabo.github.io
+# This is my website
 
-A website to host my projects. Should be updated soon.
+I hope you like
