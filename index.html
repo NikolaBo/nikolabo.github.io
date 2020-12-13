@@ -10,23 +10,52 @@
 
 	<!-- Bootstrap theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<!--Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+	<style>
+		.btn.btn-social-icon {
+		     width: 50px;
+		     height: 50px;
+		     padding: 0
+		 }
+		 .btn-linkedin {
+		     background: #0177b5;
+		     color: #ffffff
+		 }
+		 .btn-linkedin:hover,
+		 .btn-linkedin:focus {
+		     background: #015682;
+		     color: #ffffff
+		 }
+		 .btn-github {
+		     background: #24292e;
+		     color: #ffffff
+		 }
+		 .btn-github:hover,
+		 .btn-github:focus {
+		     background: black;
+		     color: #ffffff
+		 }
+	</style>
 	<title>Nikola Bojanic</title>
 </head>
 <body>
-	<div class="container-fluid">
+	<div class="container">
 	  <div class="row" style="margin-top: 20px">
-	  	<div class ="col-md-2"></div>
-	    <div class="col-md-3">
-	    	<img src="https://avatars0.githubusercontent.com/u/10509794?s=460&u=0f7f595f22ab42bf869230bb9bbc7c35818ec56d&v=4" class="img-responsive img-circle" alt="My Face">
+	    <div class="col-md-4">
+	    	<img src="https://avatars0.githubusercontent.com/u/10509794?s=460&u=0f7f595f22ab42bf869230bb9bbc7c35818ec56d&v=4" class=" img-responsive img-circle" alt="Head shot" style="width: 100%">
+	    	<p class="h1" style="font-size: 52px;">Nikola Bojanic</p>
+	    	<button type="button" class="btn btn-social-icon btn-linkedin" onclick="document.location='https://linkedin.com/in/nikola-bojanic/'"><span style="font-size: 20px"><i class="fa fa-linkedin"></i></span></button>
+	    	<button type="button" class="btn btn-social-icon btn-github" onclick="document.location='https://github.com/NikolaBo'"><span style="font-size: 20px"><i class="fa fa-github"></i></span></button>
 	    </div>
-	    <div class="col-md-5">
-	    	<p class="h1" style="font-size: 48px;">Nikola Bojanic</p>
+	    <div class="col-md-8">
+	    	<h1>My Projects</h1>
+	    	<p class="lead">Test</p>
 	    </div>
-	    <div class ="col-md-2"></div>
 	  </div>
 	</div>
-	<!-- Bootstrap JS -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+	<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js'></script>
 </body>
 
 </html>
