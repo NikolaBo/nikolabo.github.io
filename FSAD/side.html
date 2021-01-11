@@ -1,0 +1,73 @@
+<html><head>
+    <title>Side Menu</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+        body {
+            font-size: 20px;
+            margin:0px;
+            background-color: ghostwhite;
+        }
+        #menu {
+            position: fixed;
+            display: block;
+            height: 100%;
+            background-color: lightsteelblue;
+            font-family: sans-serif;
+            color: white;
+        }
+        .page-name {
+            font-weight: bold;
+        }
+        .menu-item {
+            position: relative;
+            padding: 0.5em;
+            display: block;
+        }
+        .menu-item a, .dropdown-btn {
+            text-decoration: none;
+            color: white;
+        }
+        .menu-item:hover {
+            background-color: lightslategrey;
+            cursor: pointer;
+        }            
+        .dropdown-container a {
+          display: none;
+        }
+        .dropdown-item:hover {
+            background-color: lightslategrey;
+        }
+        .dropdown-container:hover a {
+            display: block;
+        }
+        .dropdown-container:hover .menu-item {
+            background-color: lightslategrey;
+        }
+        .dropdown-item {
+            padding: .5em;
+            margin:0;
+            text-decoration: none;
+            color: white;
+        }
+        .fa-caret-down {
+            float: right;
+            padding-left: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <div class="menu-item page-name">Nikola's Site</div>
+        <div class="menu-item"><a href="./">Home</a></div>
+        <div class="dropdown-container">
+            <div class="menu-item">Pages<i class="fa fa-caret-down"></i></div>
+            <a class="dropdown-item" href="#">Assignments</a>
+            <a class="dropdown-item" href="#">Page 1</a>
+            <a class="dropdown-item" href="#">Page 2</a>
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body></html>
