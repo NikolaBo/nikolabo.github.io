@@ -1,0 +1,79 @@
+/*
+  Name: Nikola Bojanic
+  Date: April 7, 2021
+  Section: CSE 154 AF
+  This is the styles.css page which holds all the styles
+  common to my CP1 pages.
+*/
+
+body {
+  background-color: ghostwhite;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px;
+}
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 18px;
+}
+
+.card-container section {
+  width: 30%;
+}
+
+body > footer {
+  background-color: lightblue;
+  padding: 24px;
+  text-align: center;
+}
+
+a {
+  color: teal;
+  text-decoration: inherit;
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+}
+
+cite, blockquote p {
+  margin-top: 4px;
+}
+
+blockquote, aside {
+  margin: 20px 0px 20px 0px;
+  padding: 14px;
+  background-color: #e4e4e4;
+}
+
+blockquote, aside, img {
+  box-shadow: 5px 5px 10px grey;
+  border-radius: 6px;
+}
+
+blockquote p {
+  margin-bottom: 4px;
+}
+
+cite, blockquote footer {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 44px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 26px;
+  margin-bottom: 2px;
+}
