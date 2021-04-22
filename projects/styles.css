@@ -1,0 +1,229 @@
+/*
+  Name: Nikola Bojanic
+  Date: April 21, 2021
+  Section: CSE 154 AF
+  This page provides the styling for my web app, creating the album player
+  design (using some border tricks)
+*/
+
+body {
+  background-image: url('img/background1.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 94vh;
+  width: 100vw;
+}
+
+header {
+  height: 6vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#file-label {
+  display: inline-block;
+  line-height: 5vh;
+  padding: 0 1vh;
+}
+
+#file-label, button, input, footer article {
+  background-color: #d5d5d56d;
+}
+
+#file-label, button, input {
+  margin: 0.5vh;
+  opacity: 80%;
+  border: none;
+  height: 5vh;
+}
+
+#file-label, input, button:not(.scale) {
+  vertical-align: bottom;
+}
+
+input {
+  width: 20vh;
+  box-sizing: border-box;
+}
+
+input, label, button:not(.scale) {
+  font-size: 2vh;
+}
+
+button.scale {
+  font-weight: 900;
+  font-size: 3vh;
+  width: 5vh;
+}
+
+button {
+  font-family: 'Roboto', sans-serif;
+}
+
+button:hover {
+  background-color: #d5d5d5;
+}
+
+button:active {
+  background-color: #9b9b9b;
+}
+
+#album-cover {
+  height: 25.625rem;
+  width: 25.625rem;
+  border: 1rem solid white;
+  border-radius: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+#controls {
+  padding: 0rem 0.625rem;
+}
+
+h1, p, label, input, button:not(.scale) {
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0.25rem 0rem;
+}
+
+p {
+  font-size: 1.375rem;
+  margin: 0.125rem 0rem;
+}
+
+#time {
+  font-size: 1.125rem;
+  margin: 0rem;
+}
+
+#seeking-bar {
+  margin: -0.25rem 0rem 0.25rem 0rem;
+  padding: 0rem;
+  width: 25rem;
+}
+
+#filled, #empty {
+  border: 0.25rem solid;
+  margin: 0rem;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0 -0.25rem;
+  padding: 0;
+}
+
+#filled {
+  border-color: white;
+  background-color: white;
+  border-radius: 0.313rem 0rem 0rem 0.313rem;
+  width: 40%;
+}
+
+#empty {
+  border-color: lightslategray;
+  background-color: lightslategray;
+  border-radius: 0rem 0.313rem 0.313rem 0rem;
+  width: 60%;
+}
+
+.dot, #play {
+  border-radius: 50%;
+  display: inline-block;
+  background-color: white;
+}
+
+.dot {
+  margin: 0rem -0.7815rem;
+  height: 1.563rem;
+  width: 1.563rem;
+  position: relative;
+  top: 0.5rem;
+}
+
+#play {
+  height: 3.12rem;
+  width: 3.12rem;
+  clip-path:
+    polygon(
+      0% 0%,
+      0% 100%,
+      33% 100%,
+      33% 25%,
+      75% 50%,
+      33% 75%,
+      33% 100%,
+      100% 100%,
+      100% 0%
+    );
+}
+
+#play-controls {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#end {
+  float: right;
+  padding-right: 0.8rem;
+}
+
+.skip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#triangle-r, #triangle-l, .bar {
+  height: 1.5rem;
+  box-sizing: border-box;
+  border-radius: 0.125rem;
+}
+
+#triangle-r, #triangle-l {
+  width: 1.5rem;
+  border-style: solid;
+}
+
+#triangle-r {
+  border-width: 0.75rem 0rem 0.75rem 1.5rem;
+  border-color: transparent transparent transparent white;
+}
+
+#triangle-l {
+  border-width: 0.75rem 1.5rem 0.75rem 0rem;
+  border-color: transparent white transparent transparent;
+}
+
+.bar {
+  width: 0.5rem;
+  border: solid 0.25rem white;
+  background-color: white;
+}
+
+/*
+resources used:
+https://github.com/tsayen/dom-to-image for saving (not used yet)
+https://bennettfeely.com/clippy/ for play button clipping
+https://css-tricks.com/making-pure-css-playpause-button/ for skip buttons
+*/

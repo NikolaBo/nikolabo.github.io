@@ -1,0 +1,56 @@
+<!--
+  Name: Nikola Bojanic
+  Date: April 21, 2021
+  Section: CSE 154 AF
+  This is a page with a album player design created through CSS, that you can
+  customize through interactive JS.
+-->
+
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Albumify</title>
+    <meta name="description" content="Aesthetic Music Player">
+    <meta name="author" content="Nikola Bojanic">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="img/dom-to-image.min.js"></script>
+    <script src="img/FileSaver.min.js"></script>
+    <script type="module" src="index.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <span class="menu-item">
+        <button class="scale" id="grow">+</button>
+        <button class="scale" id="shrink">-</button>
+      </span>
+      <span class="menu-item" id="customization">
+        <span id="menu-page"></span>
+        <button id="page-btn" class="scale">&gt;</button>
+      </span>
+    </header>
+    <main>
+      <div id="album-cover"></div>
+      <section id="controls">
+        <h1 id="song-name">Dear April</h1>
+        <p id="artist-name">Frank Ocean</p>
+        <div id="seeking-bar">
+          <hr id="filled"><span class="dot"></span><hr id="empty">
+        </div>
+        <p id="time"><span id="start">0:53</span><span id="end">3:51</span></p>
+        <section id="play-controls">
+          <div class="skip"><div class="bar"></div><div id="triangle-l"></div></div>
+          <span id="play"></span>
+          <div class="skip"><div id="triangle-r"></div><div class="bar"></div></div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
