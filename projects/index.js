@@ -55,7 +55,7 @@
     () => generateButton(() => toggleSelector("#play-controls"), "Toggle Play Controls"),
     () => generateButton(nextBackground, "Next Background"),
     () => generateFileInput("Upload Background", setCustomImage),
-    () => generateButton(saveImage, "Save Image")
+    () => generateButton(saveImage, "Save Image (Experimental")
   ];
 
   // Default backgrounds
