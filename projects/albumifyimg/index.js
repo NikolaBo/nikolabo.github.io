@@ -60,11 +60,11 @@
 
   // Default backgrounds
   const backgroundImages = [
-    "albumifyimg/background1.jpeg",   // Photo by Kevin Ianeselli on Unsplash
-    "albumifyimg/background2.jpeg",   // Photo by Joshua Fuller on Unsplash
-    "albumifyimg/background3.jpeg",   // Photo by Agnaldo Andrella on Unsplash
-    "albumifyimg/background4.jpeg",   // Photo by NASA on Unsplash
-    "albumifyimg/background5.jpeg"    // Photo by Gabriel on Unsplash
+    "./albumifyimg/background1.jpeg",   // Photo by Kevin Ianeselli on Unsplash
+    "./albumifyimg/background2.jpeg",   // Photo by Joshua Fuller on Unsplash
+    "./albumifyimg/background3.jpeg",   // Photo by Agnaldo Andrella on Unsplash
+    "./albumifyimg/background4.jpeg",   // Photo by NASA on Unsplash
+    "./albumifyimg/background5.jpeg"    // Photo by Gabriel on Unsplash
   ]
 
   /**
@@ -117,7 +117,6 @@
     toggleSelector(".menu-item");
     domtoimage.toBlob(document.body)
     .then(function (blob) {
-        console.log(blob);
         saveAs(URL.createObjectURL(blob), "albumify");
     });
   }
@@ -219,8 +218,6 @@
     id("end").textContent = formatDisplayTime(totalTime);
     const filledPercent = (currentTime / totalTime * 100);
     const emptyPercent = 100 - filledPercent;
-    console.log(filledPercent);
-    console.log(emptyPercent);
     id("filled").style.width = `${Math.abs(filledPercent)}%`;
     id("empty").style.width = `${Math.abs(emptyPercent)}%`;
   }

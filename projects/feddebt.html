@@ -1,0 +1,45 @@
+<!--
+  Name: Nikola Bojanic
+  Date: May 4, 2021
+  Section: CSE 154 AF
+  This page provides the organization and structure for the federal debt display.
+-->
+
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Fed Debt</title>
+    <meta name="description" content="Fun debt facts!!!!!">
+    <meta name="author" content="Nikola Bojanic">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="debtimg/styles.css">
+    <script src="debtimg/index.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <section>
+        <h1>
+          <span id="before">Find out how much Federal Debt has increased</span>
+          <strong></strong> <em></em>
+          <span id="after"> since your birth.</span>
+        </h1>
+        <label for="birthdate">Enter your birth date:</label>
+          <input type="date" id="birthdate">
+        <button>Submit</button>
+        <p>
+          Data courtesy of
+          <a href="https://fiscaldata.treasury.gov/">FiscalData</a>.
+        </p>
+        <p id="error" class="hidden">
+          Something went wrong. Make sure the date is valid. []
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

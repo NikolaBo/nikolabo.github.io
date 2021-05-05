@@ -1,0 +1,76 @@
+/*
+  Name: Nikola Bojanic
+  Date: May 4, 2021
+  Section: CSE 154 AF
+  This page provides styling for the federal debt page adding a background
+  and a visually distinct section container.
+*/
+
+body {
+  background-image: url('img.jpeg'); /* Photo by Blogging Guide on Unsplash */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 0;
+  color: aliceblue;
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: turquoise;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+.hidden {
+  display: none;
+}
+
+strong, #error {
+  font-weight: bold;
+  color: rgb(237, 107, 107);
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+section {
+  backdrop-filter: blur(2px);
+  background-color: rgba(2, 13, 27, 0.543);
+  padding: 24px;
+  width: 80%;
+  box-shadow: 0rem 0.5rem 2rem 1rem black;
+}
+
+label {
+  display: block;
+  font-size: 1.25rem;
+}
+
+input {
+  margin-top: 0.5rem;
+  width: 24rem;
+  padding: 10px;
+  box-sizing: border-box;
+  height: 3rem;
+  font-size: 1.25rem;
+}
+
+button {
+  height: 3rem;
+  font-size: 1.25rem;
+  background-color: black;
+  color: white;
+}
