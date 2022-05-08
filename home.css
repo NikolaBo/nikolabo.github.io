@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  font-weight: 300;
+  text-size-adjust: 100%;
+  background-image: url("sea.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+header {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  box-shadow: black 0 0 -2em 0;
+  clip-path: inset(0px -15px 0px 0px);
+}
+h1 {
+  font-weight: 500;
+  font-size: 3rem;
+}
+.circle {
+  border-radius: 50%;
+  box-shadow: black 0em 0rem 2rem;
+  width: 320px;
+  height: 320px;
+  margin: 1rem;
+}
+img.emoji {
+  height: 1em;
+  width: 1em;
+  margin: 0 .05em 0 .1em;
+  vertical-align: -0.1em;
+}
+div {
+  border-radius: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+div img {
+  margin-bottom: -8px;
+}
