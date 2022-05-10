@@ -1,13 +1,16 @@
+html {
+  background-image: url("sea.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
 body {
   margin: 0;
   padding: 0;
   font-family: 'IBM Plex Sans Arabic', sans-serif;
   font-weight: 300;
   text-size-adjust: 100%;
-  background-image: url("sea.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 header {
   padding-top: 60px;
